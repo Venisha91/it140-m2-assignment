@@ -35,7 +35,7 @@
 
 > Before completing the Analyze sections of this worksheet, review:
 >
-> * [ ] [Software Requirements Specification (SRS)](./analysis/name_age_srs.md)
+> * [x ] [Software Requirements Specification (SRS)](./analysis/name_age_srs.md)
 >   * `## 0. General Description`
 >   * `## 1. Functional Requirements`
 >   * `## 2. Nonfunctional Requirements`
@@ -56,7 +56,7 @@
 >
 > Enter your response below.
 
-TODO: Replace this text with your one-sentence summary of the program's purpose
+1. The program asks for the user's name and age, calculates their birth year using the current year, and displays a greeting with their name and birth year.
 
 ### 3. Inputs, Processing, and Outputs
 
@@ -74,7 +74,9 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each input.
 
-1. TODO: Replace with your first input and its source (e.g., user input, system value, internal value).
+1. The user's name, entered by the user.
+2. The user's age, entered by the user.
+3. The current calendar year, obtained from the computer's system date.
 
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, especially requirement **1.3**
 >
@@ -82,7 +84,14 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each input.
 
-1. TODO: Replace with your first input and its data type (e.g., string, integer, float, Not specified).
+1. User's name: not specified in the SRS.
+2. User's age: Integer.
+3. Current calendar year: Not specified in the SRS. 
+
+
+
+
+
 
 #### IPO: Processing
 
@@ -94,7 +103,8 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter a brief description in your own words below. Use a separate numbered bullet for each process.
 
-1. TODO: Replace with your first processing step in your own words.
+1. Convert the entered age to an integer so it can be used in a calculation.
+2. Subtract the user's age from the current calendar year to calculate their approximate birth year.
 
 #### IPO: Outputs
 
@@ -106,15 +116,15 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below. Use a separate numbered bullet for each output.
 
-1. TODO: Replace with your first output and where it is displayed (e.g., console, file, GUI).
-
+1. A personalized greetings containing the user's name and calculated birth year, displayed in the console.
+   
 > **Where to look:** [SRS](./analysis/name_age_srs.md) → `## 1. Functional Requirements`, requirement **1.5**, and `## Sample Input and Output`
 >
 > **Prompt:** Does the output need to follow a particular format? If so, describe the required format.
 >
 > Enter your response below. Use a separate numbered bullet for each output format.
 
-1. TODO: Replace with your first output format.
+1. The output must follow the format "Hello {name}! You were born in {year}." with the user's name and calculated birth year replacing the placeholder.
 
 ### 4. Requirements in My Own Words
 
@@ -130,7 +140,7 @@ TODO: Replace this text with your one-sentence summary of the program's purpose
 >
 > Enter your response below in your own words.
 
-Replace this text with your explanation of requirement 1.2 in your own words.
+1.The program must ask the user how old they are and accept the age they enter.
 
 #### SRS Requirement 1.3 — Use the Age in an Arithmetic Calculation
 
@@ -140,7 +150,7 @@ Replace this text with your explanation of requirement 1.2 in your own words.
 >
 > Enter your response below in your own words.
 
-TODO: Replace this text with your explanation of requirement 1.3 in your own words.
+1. The program must convert the entered age to an integer so it can be used to calculate the birth year.
 
 #### SRS Requirement 1.4 — Calculate the Approximate Birth Year
 
@@ -150,7 +160,7 @@ TODO: Replace this text with your explanation of requirement 1.3 in your own wor
 >
 > Enter your response below.
 
-Replace this text with your explanation of requirement 1.4 in your own words.
+1.The program must subtract the user's age from the current calendar year to estimate the year they were born.
 
 #### SRS Requirement 1.5 — Display the Personalized Result
 
@@ -160,7 +170,7 @@ Replace this text with your explanation of requirement 1.4 in your own words.
 >
 > Enter your response below.
 
-TODO: Replace this text with your explanation of requirement 1.5 in your own words.
+1. The program must display a greeting in the console that includes the user's name and calculated birth year in the required format.
 
 ### 5. Constraints and Special Cases
 
@@ -174,8 +184,9 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 >
 > Enter your response below. Use a separate numbered bullet for each constraint.
 
-1. TODO: Replace with your first important constraint.
-
+1. Save the program as name_age.py and run it in the IT-140 course IDE.
+2. Use clear variable names, proper spacing,and only code needed for the task.
+3. Make sure the program runs without errors and produces the expected results for the provided test cases.
 #### Special or Edge Cases
 
 > An **edge case** uses an unusual or boundary value that can help reveal problems in a solution.
@@ -186,17 +197,19 @@ TODO: Replace this text with your explanation of requirement 1.5 in your own wor
 >
 > Enter your response below. Use a separate numbered bullet for each edge case.
 
-1. TODO: Replace with your first edge case.
+1. Age 0: Morgan's calculated birth year should be 2026.
+2. Age -5: Riley's calculated birth year should be 2031.
+3. Age 105: Taylor's calculated birth year should be 1921.
 
 ### 6. Analyze Checkpoint
 
 > Before continuing to the Design phase, make sure:
 >
-> * [ ] I can explain the program's purpose in my own words.
-> * [ ] I identified the program's inputs, processing, and outputs.
-> * [ ] I understand the selected functional requirements.
-> * [ ] I identified important constraints and edge cases.
-> * [ ] I did not add requirements that are not stated in the SRS.
+> * [x] I can explain the program's purpose in my own words.
+> * [x] I identified the program's inputs, processing, and outputs.
+> * [x] I understand the selected functional requirements.
+> * [x] I identified important constraints and edge cases.
+> * [x] I did not add requirements that are not stated in the SRS.
 >
 > When these checks are complete, continue to the [Design phase](./design/README.md).
 
