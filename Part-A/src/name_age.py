@@ -1,20 +1,19 @@
-"""TODO: Replace with a one-line summary of the program's purpose (<73 chars).
+"""Ask for a name and age, then calculate and display the birth year.
 
 Input:
-    TODO: Replace with a major input, including its type and source.
-    TODO: Replace with another major input, or delete this TODO line.
-    TODO: Replace with another major input, or delete this TODO line.
-
+    user_name: String entered by the user in the console.
+    user_age: Integer converted from the user's console input.
+    CURRENT_YEAR: Integer obtained from the system date.
 Process:
-    TODO: Replace with a major processing step.
+    Subtract user_age from CURRENT_YEAR to calculate birth_year.
 
 Output:
-    TODO: Replace with a major output, including its type and destination.
+    A formatted string showing the user's name and birth year in the console.
 
 Typical usage example:
-    TODO: Replace with the input prompt and original name-input example.
-    TODO: Replace with the input prompt and original age-input example.
-    TODO: Replace with the resulting output from those inputs.
+    What is your name? Crissie
+    How old are you? 30
+    Hello Crissie! You were born in 1996.
 """
 
 # === Imports ===
@@ -29,15 +28,12 @@ def main() -> None:
     """Run the name-age program."""
 
     # Get user input.
-    # TODO: Replace with code to get user's name as a string. See zyBooks 1.3.
-    # TODO: Replace with code to get user's age as an integer. See zyBooks 2.6.
-
+    user_name = input("What is your name? ")
+    user_age = int(input("How old are you? "))
     # Calculate user's approximate birth year.
-    # TODO: Replace with code to process data. See zyBooks 1.16 & 1.17.
-
+    birth_year = CURRENT_YEAR - user_age
     # Output personalized message with user's name and birth year.
-    # TODO: Replace with code to output formatted results. zyBooks 1.3 & 2.7.
-
+    print(f"Hello {user_name}! You were born in {birth_year}.")
 
 # === Main Guard ===
 if __name__ == "__main__":
@@ -45,5 +41,5 @@ if __name__ == "__main__":
 
 
 # === References ===
-# TODO: Replace with an APA-style reference for a source you used, or delete.
+
 # TODO: Replace with another APA-style reference, or delete this TODO line.
